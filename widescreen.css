@@ -1,0 +1,465 @@
+/*Main Box*/
+.root {
+    width: 100%;
+    padding: 15px 20px 0px;
+}
+
+.main_logo {
+    position: absolute;
+    width: 250px;
+    height: 80px;
+}
+
+.frame_1, .grey_button, #button_row, #print_menue, .grey_button2, .anzeige_dosierung, .print_button, #print_frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.printer_front {
+    width: 980px;
+    height: auto;
+}
+
+.screen {
+    /*Positioning*/
+    position: absolute;
+    margin-top: 550px;
+    margin-left: -465px;
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*Sizing*/
+    width: 349px;
+    height:212px;
+
+    /*Filling*/
+    background-image: linear-gradient(-135deg,rgb(33,33,33),rgb(66,66,66));
+    
+    /*Border*/
+    border: solid #2E2E2E;
+    border-width: 6px;
+    border-radius: 15px;
+
+    /*indicating that it is clickable*/
+    cursor: pointer;
+
+    /*Animation attributes*/
+    animation-name: zoom_screen;
+    animation-delay: 3s;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+}
+
+#motto {
+    display: none;
+    width: 1000px;
+    height:auto ;
+}
+
+.frame_2 {
+    /*Positioning*/
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 267px;
+ 
+    /*Sizing*/
+    width: 1482px;
+    height:940px;
+    display: inline-flex;
+     
+    /*Border*/
+    border: solid #2E2E2E;
+    border-width: 12px;
+    border-radius: 15px;
+}
+
+.side_menue {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
+
+    width: 500px;
+    height: 886px;
+
+    background-color: rgba(155,218,243,0.42);
+    border-radius: 15px 0px 0px 15px;
+
+}
+
+.name_menue, .chargen_menue, .sprach_menue {
+    float: right;
+    position:relative;
+    width: 500;
+    padding-top: 30px;
+    
+    display: flex;
+    text-align: start;
+    padding-right: 5px;
+}
+
+#label_patient, #patient, #label_sprache, #sprache, #label_chargennummer, #chargennummer, #label_anzahl,#anzahl {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+    margin-right: 7px;
+}
+
+select, input {
+    width: 260px;
+    height: 39px;
+}
+
+.anzahl_menue {
+    float: left;
+    position: relative;
+    text-align: center;
+    margin-top: 180px;
+}
+
+#button_row {
+    width: 500px;
+    height: 100px;
+}
+
+.grey_button {
+    width: 80px;
+    height: 80px;
+    
+    border: #808080 solid 3px;
+    border-radius: 20px;
+    background-color: white;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    color: #808080;
+    text-align: center;
+}
+
+button {
+    border: none;
+    background-color: rgba(155,218,243,0);
+    margin: none;
+}
+
+#anzahl {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 400;
+
+    width: 100px;
+    height: 75px;
+}
+
+#print_menue {
+    float: left;
+    position: relative;
+    width: 500px;
+    height: 338px;
+}
+
+.print_button {
+    width: 235px;
+    height: 75px;
+    
+    border: #808080 solid 3px;
+    border-radius: 20px;
+    background-color: #bababa;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.druckkopf_nummer {
+    width: 40px;
+    height: 40px;
+
+    border: #808080 solid 2px;
+    border-radius: 15px;
+
+    background-color: white;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: #808080;
+    text-align: center;
+}
+
+#wirkstoff_row {
+    position: absolute;
+    display: inline-flex;
+    height: 180px;
+    width: 943px; 
+    margin-left: 515px;
+    margin-top: 15px;
+}
+
+.wirkstoff {
+    width: 231px;
+    height: 180px;
+    background-color: #9bdaf3;
+}
+
+#wirkstoff1 {
+    margin-left: 4px;
+    padding: 4px;
+}
+
+#wirkstoff2, #wirkstoff3 {
+    padding: 4px;
+    border-left: #00a1e0 solid 3px;
+}
+
+#wirkstoff4 {
+    padding: 4px;
+    border-left: #00a1e0 solid 3px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.header1 {
+    width: 200px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+}
+
+.header2 {
+    width: 943px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 50px;
+}
+.header3 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.anzeige {
+    width: 200px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+}
+
+.wirkstoffbox {
+    width: 943px;
+    height: 721px;
+    margin-top: 195px;
+}
+
+img {
+    margin-top: 15px;
+    width: auto;
+    height: 280px;
+}
+
+#dosierung_menue {
+    height: 312px;
+    width: 943px;
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+#minus_menue, #plus_menue {
+    height: 312px;
+    width: 100px;
+}
+
+.anzeige_dosierung {
+    height: 210px;
+    width:150px;
+}
+
+#amb {
+    display: none;
+}
+
+#hct {
+    display: none;
+}
+
+#cad {
+    display: none;
+}
+
+#ros {
+    display: none;
+}
+
+.m-15 {
+    margin-top: 15px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+span {
+    margin-right: 5px;
+}
+
+video {
+    /*Positioning*/
+    position: absolute;
+    margin-left: 267px;
+    
+    /*Sizing*/
+    width: 1482px;
+    height:940px;
+    display: none;
+    
+}
+
+#print_report {
+    width: 760px;
+    height: 500px;
+
+    border: solid #2E2E2E;
+    border-width: 4px;
+    border-radius: 15px;
+
+    display: inline-flex;
+}
+#print_left{
+
+    width: 253px;
+    height: 495px;
+    display: block;
+}
+
+#print_img {
+    width: 253px;
+    height: 247px;
+    background-image: url("./assets/pill_no_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: center;
+
+    border-right: solid #2E2E2E;
+    border-bottom: solid #2E2E2E;
+    border-width: 3px;
+    border-radius: 15px 0px 0px 0px;
+}
+
+#print_data {
+    width: 507px;
+    height: 495px;
+    padding-left: 3px;
+}
+
+.header4 {
+    width: 507px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+}
+
+.header5 {
+    width: 507px;
+    padding-left: 5px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+#print_status {
+    width: 253px;
+    height: 245px;
+
+    border-right: solid #2E2E2E;
+    border-width: 3px;
+    border-radius: 0px 0px 0px 15px;
+}
+
+#passed {
+    padding-top: 40px;
+    width: 253px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: #6bc04b;
+    text-align: center;
+}
+
+#mg {
+    width: 253px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+}
+
+#marge {
+    width: 253px;
+    margin-top: -17px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#frame_3 {
+    display: none;
+}
+
+li {
+    width: 507px;
+    margin-left: 30px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+#qr_code {
+    width: 760px;
+    height: 500px;
+    margin-left: 100px;
+    display: inline-flex;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+
+.report {
+    height: 500px;
+    margin-top: 12%;
+    padding-left: 200px;
+    display: inline-flex;
+}
+
+/* Animations */
+
+@keyframes zoom_screen {
+    from {width: 349px; height: 212px; margin-top: 530px; margin-left: -465px;border-width: 6px;}
+    to {width: 1482px; height: 940px; margin-top: 0px; margin-left: 200px;
+    border-width: 12px;}
+}
+

@@ -1,0 +1,64 @@
+/*Main Box*/
+.root {
+    width: 100%;
+    padding: 7px 10px 0px;
+}
+
+.main_logo {
+    position: absolute;
+    width: 35%;
+    height: auto;
+}
+
+.frame_1, .grey_button, #button_row, #print_menue, .grey_button2, .anzeige_dosierung, .print_button, #print_frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.printer_front {
+    width: 90%;
+    height: auto;
+    margin-top: 10%;
+}
+
+#motto {
+    display: none;
+    width: 1000px;
+    height:auto ;
+}
+
+.screen {
+    /*Positioning*/
+    position: absolute;
+    margin-top: 220px;
+    margin-right: 110px;
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*Sizing*/
+    width: 120px;
+    height:74px;
+
+    /*Filling*/
+    background-image: linear-gradient(-135deg,rgb(33,33,33),rgb(66,66,66));
+    
+    /*Border*/
+    border: solid #2E2E2E;
+    border-width: 3px;
+    border-radius: 5px;
+
+    /*indicating that it is clickable*/
+    cursor: pointer;
+
+    /*Animation attributes*/
+    animation-name: zoom_screen;
+    animation-delay: 3s;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+}
+
+
