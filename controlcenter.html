@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <title>DiHeSim</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">  
+  </head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <div class="root">
+      <a href="./index.html"><img class="main_logo" src="./assets/DiHeSim.png" alt="dihesim logo"></a>
+        
+      <div class="frame_2" id="controll_frame">
+        <div class="side_menue">
+          <div class="name_menue">
+              <label for="patient" id="label_patient">Name</label>
+              <select name="patient" id="patient">
+                <option value="frau_wohlfarth">Frau Wohlfarth</option>
+                <option value="herr_schneider">Herr Schneider</option>
+                <option value="frau_ammer">Frau Ammer</option>
+              </select>
+          </div>
+          <div class="sprach_menue">
+            <label for="sprache" id="label_sprache">Sprachausgabe</label>
+            <select name="sprache" id="sprache">
+              <option value="deutsch">deutsch</option>
+              <option value="englisch">english</option>
+              <option value="hindi">hindi</option>
+            </select>
+          </div>
+          <div class="chargen_menue">
+            <label for="chargennummer" id="label_chargennummer">Chargennr.</label>
+            <input type="text" id="chargennummer" value="">
+          </div>
+
+          <div class="anzahl_menue">
+            <div id="label_anzahl">Tabletten</div>
+            <br />
+
+            <div id="button_row">
+              <button type="button" onclick="amount_reduce_5()"><div class="grey_button" id="anzahl_m5">-5</div></button>
+              <button type="button" onclick="amount_reduce_1()"><div class="grey_button" id="anzahl_m1">-1</div></button>
+
+              <div id="anzahl">1</div>
+
+              <button type="button" onclick="amount_add_1()"><div class="grey_button" id="anzahl_p1">+1</div></button>
+              
+              <button type="button" onclick="amount_add_5()"><div class="grey_button" id="anzahl_p5">+5</div></button>
+            </div>
+          </div>
+          <div id="print_menue">
+            <div type="button" class="print_button" onclick="print_b()">Drucken</div>  
+          </div>
+        </div>
+        <div id="wirkstoff_row">
+
+          <div class="wirkstoff" id="wirkstoff1" type="button" onclick="show_amb()">
+            <div class="druckkopf_nummer">1</div>
+            <br />
+            <p class="header1">Amlodipine</p>
+            <p class="anzeige"><span id="anzeige1">0.0</span>mg</p>
+          </div>
+
+          <div class="wirkstoff" id="wirkstoff2" type="button" onclick="show_hct()">
+            <div class="druckkopf_nummer">2</div>
+            <br />
+            <p class="header1">HCT</p>
+            <p class="anzeige"><span id="anzeige2">0.0</span>mg</p>
+          </div>
+
+          <div class="wirkstoff" id="wirkstoff3"  type="button" onclick="show_cad()">
+            <div class="druckkopf_nummer">3</div>
+            <br />
+            <p class="header1">Candesartan</p>
+            <p class="anzeige"><span id="anzeige3">0.0</span>mg</p>
+          </div>
+
+          <div class="wirkstoff" id="wirkstoff4"  type="button" onclick="show_ros()">
+            <div class="druckkopf_nummer">4</div>
+            <br />
+            <p class="header1">Rosuvastatin</p>
+            <p class="anzeige"><span id="anzeige4">0.0</span>mg</p>
+          </div>
+        
+        </div>
+        <div class="wirkstoffbox" id="amb">
+          <p class="header2">Amlodipine Besylate (AMB)</p>
+
+          <center><img src="./assets/amlodipine.webp" alt="atomare Struktur von Amlodipine" /></center>
+
+          <div id="dosierung_menue">
+            <div id="minus_menue">
+              <div type="button" class="grey_button m-15" onclick="m01_amd()">-0.1</div>
+              <div type="button" class="grey_button m-15" onclick="m1_amd()">-1.0</div>
+            </div>
+
+            <div class="anzeige_dosierung header3"><span id="dosierung1">0.0</span>mg</div>
+            
+            <div id="plus_menue">
+              <div type="button" class="grey_button m-15" onclick="p01_amd()">+0.1</div>
+              <div type="button" class="grey_button m-15" onclick="p1_amd()">+1.0</div>
+            </div>
+          </div>
+        </div>
+        <div class="wirkstoffbox" id="hct">
+          <p class="header2">Hydrochlorothiazide (HCT)</p>
+
+          <center><img src="./assets/Hydrochlorothiazide.svg.png" alt="atomare Struktur von Hydrochlorothiazide" /></center>
+
+          <div id="dosierung_menue">
+            <div id="minus_menue">
+              <div type="button" class="grey_button m-15" onclick="m01_hct()">-0.1</div>
+              <div type="button" class="grey_button m-15" onclick="m1_hct()">-1.0</div>
+            </div>
+
+            <div class="anzeige_dosierung header3"><span id="dosierung2">0.0</span>mg</div>
+            
+            <div id="plus_menue">
+              <div type="button" class="grey_button m-15" onclick="p01_hct()">+0.1</div>
+              <div type="button" class="grey_button m-15" onclick="p1_hct()">+1.0</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="wirkstoffbox" id="cad">
+          <p class="header2">Candesartan Cilexetil (CAD)</p>
+
+          <center><img src="./assets/Candesartan Cilexetil.gif" alt="atomare Struktur von Candesartan Cilexetil" /></center>
+
+          <div id="dosierung_menue">
+            <div id="minus_menue">
+              <div type="button" class="grey_button m-15" onclick="m01_cad()">-0.1</div>
+              <div type="button" class="grey_button m-15" onclick="m1_cad()">-1.0</div>
+            </div>
+
+            <div class="anzeige_dosierung header3"><span id="dosierung3">0.0</span>mg</div>
+
+            <div id="plus_menue">
+              <div type="button" class="grey_button m-15" onclick="p01_cad()">+0.1</div>
+              <div type="button" class="grey_button m-15" onclick="p1_cad()">+1.0</div>
+            </div>
+          </div>
+        </div>
+        <div class="wirkstoffbox" id="ros">
+          <p class="header2">Rosuvastatin Calcium (ROS)</p>
+
+          <center><img src="./assets/rosuvastatin-structure.png" alt="atomare Struktur von Rosuvastatin Calcium" /></center>
+
+          <div id="dosierung_menue">
+            <div id="minus_menue">
+              <div type="button" class="grey_button m-15" onclick="m01_ros()">-0.1</div>
+              <div type="button" class="grey_button m-15" onclick="m1_ros()">-1.0</div>
+            </div>
+
+            <div class="anzeige_dosierung header3"><span id="dosierung4">0.0</span>mg</div>
+
+            <div id="plus_menue">
+              <div type="button" class="grey_button m-15" onclick="p01_ros()">+0.1</div>
+              <div type="button" class="grey_button m-15" onclick="p1_ros()">+1.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <video id="print_vid" src="./assets/DiHeSys Video Short better quality no sound_Trim.mp4" muted autoplay></video>
+
+      <div id="frame_3">
+        <div class="report">
+          <div id="print_report">
+            <div id="print_left">
+              <div id="print_img"></div>
+              <div id="print_status">
+                <p id="passed">Passed</p>
+                <p id="mg">160mg</p>
+                <p id="marge">152mg (-5%) - 168mg (+5%)</p>
+              </div>  
+            </div>
+            <div id="print_data">
+              <p class="header4"> Druckbericht</p>
+              <p class="header5">Herstellungsdatum: <span id="datum"></span></p>
+              <p class="header5">Chargennummer: <span id="display_chargennr"></span></p>
+              <br />
+              <br />
+              <p class="header5">Wirkstoffe: </p>
+              <ul>
+                <li>Amlodipine Besylate (AMB)</li>
+                <li>Hydrochlorothiazide (HCT)</li>
+                <li>Candesartan Cilexetil (CAD)</li>
+                <li>Rosuvastatin Calcium (ROS)</li>
+              </ul>
+            </div>
+          </div>
+          <div id="qr_code"></div>
+        </div>  
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
