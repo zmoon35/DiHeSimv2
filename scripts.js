@@ -81,7 +81,7 @@ function amount_reduce_5 () {
 }
 
 function show_amb () {
-    if (box_amb.style.display == 'none'){
+    if (box_amb.style.display == 'none' || box_amb.style.display === ""){
         box_amb.style.display = 'block';
         box_hct.style.display = 'none';
         box_cad.style.display = 'none';
@@ -98,7 +98,7 @@ function show_amb () {
 }
 
 function show_hct () {
-    if (box_hct.style.display == 'none'){
+    if (box_hct.style.display == 'none' || box_hct.style.display === ""){
         box_amb.style.display = 'none';
         box_hct.style.display = 'block';
         box_cad.style.display = 'none';
@@ -115,7 +115,7 @@ function show_hct () {
 }
 
 function show_cad () {
-    if (box_cad.style.display == 'none'){
+    if (box_cad.style.display == 'none' || box_cad.style.display === ""){
         box_amb.style.display = 'none';
         box_hct.style.display = 'none';
         box_cad.style.display = 'block';
@@ -132,7 +132,7 @@ function show_cad () {
 }
 
 function show_ros () {
-    if (box_ros.style.display == 'none'){
+    if (box_ros.style.display == 'none' || box_ros.style.display === ""){
         box_amb.style.display = 'none';
         box_hct.style.display = 'none';
         box_cad.style.display = 'none';
@@ -300,8 +300,8 @@ function print_b () {
     document.getElementById('controll_frame').style.display = "none";
     video.style.display = "inline-flex";
 
-    setTimeout(()=> {video.style.display = "none";},14000);
-    setTimeout(()=> {document.getElementById("frame_3").style.display = "block";},14000);  
+    setTimeout(()=> {video.style.display = "none";},9500);
+    setTimeout(()=> {document.getElementById("frame_3").style.display = "block";},9500);  
     
     var charge_nr = document.getElementById("chargennummer").value;
     var display_charge_nr = document.getElementById("display_chargennr");
@@ -315,23 +315,21 @@ function qr_decision() {
     var selection_sprache = document.getElementById("sprache").value;
     var display_qr = document.getElementById("qr_code");
 
-    if (selection_name == 'frau_wohlfarth' && selection_sprache == 'deutsch') {
+    if (selection_name == 'frau_bauer' && selection_sprache == 'deutsch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/wohlfarthDE.png)"
-    } else if (selection_name == 'frau_wohlfarth' && selection_sprache == 'englisch') {
+    } else if (selection_name == 'frau_bauer' && selection_sprache == 'englisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/wohlfarthEN.png)"
-    } else if (selection_name == 'frau_wohlfarth' && selection_sprache == 'hindi') {
+    } else if (selection_name == 'frau_bauer' && selection_sprache == 'spanisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/wohlfarthHI.png)"
-    } else if (selection_name == 'herr_schneider' && selection_sprache == 'deutsch') {
+    } else if (selection_name == 'frau_bauer' && selection_sprache == 'franzoesisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/schneiderDE.png)"
-    } else if (selection_name == 'herr_schneider' && selection_sprache == 'englisch') {
+    } else if (selection_name == 'herr_schneider' && selection_sprache == 'franzoesisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/schneiderEN.png)"
-    } else if (selection_name == 'herr_schneider' && selection_sprache == 'hindi') {
+    } else if (selection_name == 'herr_schneider' && selection_sprache == 'spanisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/schneiderHI.png)"
-    } else if (selection_name == 'frau_ammer' && selection_sprache == 'deutsch') {
+    } else if (selection_name == 'herr_schneider' && selection_sprache == 'deutsch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/ammerDE.png)"
-    } else if (selection_name == 'frau_ammer' && selection_sprache == 'englisch') {
+    } else if (selection_name == 'herr_schneider' && selection_sprache == 'englisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/ammerEN.png)"
-    } else if (selection_name == 'frau_ammer' && selection_sprache == 'hindi') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/ammerHI.png)"
-    }
+    } 
 }
