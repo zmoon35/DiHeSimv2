@@ -1,3 +1,15 @@
+.m-15 {
+    margin-top: 3%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+span {
+    margin-right: 3%;
+}
+
 /*Main Box*/
 .root {
     width: 100%;
@@ -6,150 +18,68 @@
 
 .main_logo {
     position: absolute;
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
-
-    top: 15px;
-    left: 23px;
-    z-index: 101;
 }
 
-
-.frame_1, .grey_button, #button_row, #print_menue, .grey_button2, .anzeige_dosierung, .print_button, #print_frame{
+/*inhalte zentrieren*/
+.frame_1, .grey_button, #button_row, #print_menue, .grey_button2, .anzeige_dosierung, .print_button, #print_frame {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/*druckeransicht*/
 .printer_front {
-    width: 645px;
+    width: 980px;
     height: auto;
-    margin-top: 10%;
-    position: relative;
+    margin-top: 15%;
 }
 
-.screen {
-    /*Positioning*/
-    position: absolute;
-    margin-top: 420px;
-    margin-left: -305px;
-    z-index: 100;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /*Sizing*/
-    width: 225px;
-    height: 140px;
-
-    /*Filling*/
-    background-image: linear-gradient(-135deg,rgb(33,33,33),rgb(66,66,66));
-    
-    /*Border*/
-    border: solid #2E2E2E;
-    border-width: 3px;
-    border-radius: 5px;
-
-    /*indicating that it is clickable*/
-    cursor: pointer;
-
-    /*Animation attributes*/
-    animation-name: zoom_screen;
-    animation-delay: 3s;
-    animation-duration: 2s; 
-    animation-fill-mode: forwards;
-}
-
-
-#motto {
-    display: none;
-    width: 500px;
-    height:auto ;
-}
-
-@keyframes zoom_screen {
-    from {width: 225px; height: 140px; margin-top: 420px; margin-left: -305px;border-width: 3px;}
-    to {width: 560px; height: 350px; margin-top: 0px; margin-left: 25px;
-    border-width: 12px;}
-}
-
-.frame_2 {
-    /*Positioning*/
-    position: absolute;
- 
-    /*Sizing*/
-    width: 94.2%;
-    height: 95.64%;
-    display: inline-flex;
-     
-    /*Border*/
-    border: solid #2E2E2E;
-    border-width: 12px;
-    border-radius: 15px;
-}
+/*Menues*/
 .side_menue {
-    position: relative;
-    margin-top: 15px;
-    margin-left: 15px;
-
-    width: 94.2%;
-    height: 95.64%;
+    width: 100%;
+    height: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 
     background-color: rgba(155,218,243,0.42);
-    border-radius: 15px 0px 0px 15px;
-
+    border-radius: 0px 15px 0px 0px;
 }
 
+/*inputs*/
 .name_menue, .chargen_menue, .sprach_menue {
-    float: right;
-    position:relative;
-    width: 500;
-    padding-top: 30px;
-    
-    display: flex;
-    text-align: start;
-    padding-right: 5px;
+    display: block;
+    text-align: end;
+    padding-top: 3%;
 }
 
 #label_patient, #patient, #label_sprache, #sprache, #label_chargennummer, #chargennummer, #label_anzahl,#anzahl {
     font-family: sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 39px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
     margin-right: 7px;
 }
 
 select, input {
-    width: 260px;
-    height: 39px;
-}
-
-.anzahl_menue {
-    float: left;
-    position: relative;
-    text-align: center;
-    margin-top: 550px;
-}
-
-#button_row {
-    width: 500px;
-    height: 100px;
+    width: 150px;
+    height: 25px;
 }
 
 .grey_button {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     
-    border: #808080 solid 3px;
-    border-radius: 20px;
+    border: #808080 solid 2px;
+    border-radius: 10px;
     background-color: white;
 
     font-family: sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 30px;
     color: #808080;
     text-align: center;
 }
@@ -160,151 +90,165 @@ button {
     margin: none;
 }
 
+.mobilephone {
+    position:absolute;
+    margin-top: 100%;
+    padding-bottom: 5%;
+    width: 95%;
+    text-align: center;
+    background-color: rgba(155,218,243,0.42);
+}
+
+/*anzahl*/
+.anzahl_menue {
+    padding-top: 5%;
+}
+
 #anzahl {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    font-weight: 400;
-
-    width: 100px;
-    height: 75px;
+    width: 15%;
 }
 
+/*print*/
 #print_menue {
-    float: left;
-    position: relative;
-    width: 500px;
-    height: 338px;
+    padding-top: 5%;
 }
 
 .print_button {
-    width: 235px;
-    height: 75px;
+    width: 150px;
+    height: 50px;
     
     border: #808080 solid 3px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #bababa;
 
     font-family: sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 26px;
     color: #ffffff;
     text-align: center;
 }
 
+/*wirkstoffmenue*/
+#wirkstoff_row {
+    display: inline-flex;
+    width: 100%;
+    
+}
+
 .druckkopf_nummer {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
     border: #808080 solid 2px;
-    border-radius: 15px;
+    border-radius: 8px;
 
     background-color: white;
 
     font-family: sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 20px;
     color: #808080;
     text-align: center;
 }
 
-#wirkstoff_row {
-    position: absolute;
-    display: inline-flex;
-    height: 180px;
-    width: 80%; 
-    margin-top: 300px;
-}
-
-
 .wirkstoff {
-    width: 231px;
-    height: 180px;
+    width: 25%;
     background-color: #9bdaf3;
 }
 
 #wirkstoff1 {
-    margin-left: 4px;
-    padding: 4px;
+    padding: 2px;
+    border-radius: 0px 0px 0px 15px;
 }
 
 #wirkstoff2, #wirkstoff3 {
-    padding: 4px;
+    padding: 2px;
     border-left: #00a1e0 solid 3px;
 }
 
 #wirkstoff4 {
-    padding: 4px;
+    padding: 2px;
     border-left: #00a1e0 solid 3px;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 0px 15px 0px;
 }
 
+/*überschriften*/
 .header1 {
-    width: 200px;
     font-family: sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 13px;
     text-align: center;
 }
 
 .header2 {
-    width: 943px;
+    width: 100%;
     font-family: sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 13px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 .header3 {
     font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 26px;
 }
 
 .anzeige {
-    width: 200px;
     font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 13px;
     text-align: center;
 }
 
-.wirkstoffbox {
-    width: 943px;
-    height: 721px;
-    margin-top: 195px;
+.header4 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
 }
 
-img {
-    margin-top: 15px;
-    width: auto;
-    height: 280px;
+.header5 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/*Wirkstoffanzeige*/
+.wirkstoffbox {
+    width: 100%;
+    height: 50%;
+}
+
+.struktur {
+    display: none;
 }
 
 #dosierung_menue {
-    height: 312px;
-    width: 943px;
+    width: 100%;
     display: inline-flex;
     justify-content: center;
-    padding-top: 30px;
 }
+
 #minus_menue, #plus_menue {
-    height: 312px;
-    width: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.anzeige_dosierung {
-    height: 210px;
-    width:150px;
-}
 
+/*Wirkstoffanzeige voreinstellung ausgeblendet*/
 #amb {
     display: none;
 }
@@ -321,56 +265,106 @@ img {
     display: none;
 }
 
-.m-15 {
-    margin-top: 15px;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-span {
-    margin-right: 5px;
-}
-
+/*Videosettings*/
 video {
     /*Positioning*/
     position: absolute;
-    margin-left: 267px;
+    margin-top: 15%;
     
     /*Sizing*/
-    width: 1482px;
-    height:940px;
+    width: 100%;
+    height:auto;
     display: none;
-    
 }
 
+/*Printbericht*/
+/*basis box*/
 #frame_3 {
     display: none;
 }
 
-li {
-    width: 507px;
-    margin-left: 30px;
+#print_report {
+    margin-top: 20%;
+    width: 100%;
+    height: 40%;
+
+    border: solid #2E2E2E;
+    border-width: 2px;
+    border-radius: 10px;
+    display: inline-flex;
+}
+
+/*linke seite*/
+#print_left{
+    width: 40%;
+    display: block;
+    border-right: solid #2E2E2E;
+    border-width: 2px;
+}
+
+#print_img {
+    width: 100%;
+    height: 150px;
+    background-image: url("./assets/pill_no_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: center;
+
+    border-bottom: solid #2E2E2E;
+    border-width: 2px;
+}
+
+
+#print_status {
+    width: 100%;
+    height: auto;
+}
+
+#passed {
+    padding-top: 10%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    color: #6bc04b;
+    text-align: center;
+}
+
+#mg {
     font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 13px;
+    text-align: center;
 }
 
+#marge {
+    margin-top: -17px;
+    font-size: 10px;
+    text-align: center;
+}
+
+/*rechte seite*/
+#print_data {
+    width: 60%;
+    height: 100%;
+    padding:3%;
+}
+
+li {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/*qr code settings*/
 #qr_code {
-    width: 760px;
-    height: 500px;
-    margin-left: 100px;
-    display: inline-flex;
+    width: 100%;
+    height: 200px;
+    margin-top: 10%;
 
     background-size: contain;
     background-repeat: no-repeat;
+    background-position-x: center;
 } 
-
-.report {
-    height: 500px;
-    margin-top: 12%;
-    padding-left: 200px;
-    display: inline-flex;
-}
