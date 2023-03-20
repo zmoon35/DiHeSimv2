@@ -316,20 +316,20 @@ function qr_decision() {
     var display_qr = document.getElementById("qr_code");
 
     if (selection_name == 'frau_bauer' && selection_sprache == 'deutsch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/wohlfarthDE.png)"
+        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerDE.png)"
     } else if (selection_name == 'frau_bauer' && selection_sprache == 'englisch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/wohlfarthEN.png)"
+        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerEN.png)"
     } else if (selection_name == 'frau_bauer' && selection_sprache == 'spanisch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/wohlfarthHI.png)"
+        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerSP.png)"
     } else if (selection_name == 'frau_bauer' && selection_sprache == 'franzoesisch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/schneiderDE.png)"
-    } else if (selection_name == 'herr_schneider' && selection_sprache == 'franzoesisch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/schneiderEN.png)"
-    } else if (selection_name == 'herr_schneider' && selection_sprache == 'spanisch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/schneiderHI.png)"
-    } else if (selection_name == 'herr_schneider' && selection_sprache == 'deutsch') {
+        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerFR.png)"
+    } else if (selection_name == 'herr_ammer' && selection_sprache == 'franzoesisch') {
+        display_qr.style.backgroundImage = "url(./assets/qrcode/ammerFR.png)"
+    } else if (selection_name == 'herr_ammer' && selection_sprache == 'spanisch') {
+        display_qr.style.backgroundImage = "url(./assets/qrcode/ammerSP.png)"
+    } else if (selection_name == 'herr_ammer' && selection_sprache == 'deutsch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/ammerDE.png)"
-    } else if (selection_name == 'herr_schneider' && selection_sprache == 'englisch') {
+    } else if (selection_name == 'herr_ammer' && selection_sprache == 'englisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/ammerEN.png)"
     } 
 }
