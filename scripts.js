@@ -314,22 +314,39 @@ function qr_decision() {
     var selection_name = document.getElementById("patient").value;
     var selection_sprache = document.getElementById("sprache").value;
     var display_qr = document.getElementById("qr_code");
+    var link = document.getElementById("qr_link");
 
     if (selection_name == 'frau_bauer' && selection_sprache == 'deutsch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerDE.png)"
+        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerDE.png)";
+        link.setAttribute("href", "https://drive.google.com/file/d/13F8cjNnsCskPGCjOnVvnG3xprQkgtyJn/view?usp=share_link");
+
     } else if (selection_name == 'frau_bauer' && selection_sprache == 'englisch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerEN.png)"
+        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerEN.png)";
+        link.setAttribute("href", "https://drive.google.com/file/d/1GvmIkKCSRUuVtpPNhHNdrMNIGwrneuqD/view?usp=share_link");
+
     } else if (selection_name == 'frau_bauer' && selection_sprache == 'spanisch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerSP.png)"
+        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerSP.png)";
+        link.setAttribute("href", "https://drive.google.com/file/d/185-nPYxcPTQNgqNr6jsN0osVMirABpcL/view?usp=share_link");
+
     } else if (selection_name == 'frau_bauer' && selection_sprache == 'franzoesisch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerFR.png)"
+        display_qr.style.backgroundImage = "url(./assets/qrcode/bauerFR.png)";
+        link.setAttribute("href", "https://drive.google.com/file/d/135gcAdJ8nCUgOztQBwdwNvC5K9j8k92C/view?usp=share_link");
+
     } else if (selection_name == 'herr_ammer' && selection_sprache == 'franzoesisch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/ammerFR.png)"
+        display_qr.style.backgroundImage = "url(./assets/qrcode/ammerFR.png)";
+        link.setAttribute("href", "https://drive.google.com/file/d/1WTDIGD-5ZNBbpUDowfGvjcm2XItqCWO1/view?usp=share_link");
+
     } else if (selection_name == 'herr_ammer' && selection_sprache == 'spanisch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/ammerSP.png)"
+        display_qr.style.backgroundImage = "url(./assets/qrcode/ammerSP.png)";
+        link.setAttribute("href", "https://drive.google.com/file/d/1wNwNIsvsB0Gtdozytw-MkeCL8qEAkEDu/view?usp=share_link");
+        
     } else if (selection_name == 'herr_ammer' && selection_sprache == 'deutsch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/ammerDE.png)"
+        display_qr.style.backgroundImage = "url(./assets/qrcode/ammerDE.png)";
+        link.setAttribute("href", "https://drive.google.com/file/d/1gA1NZPVJeibLvhEocLOxkW-wg1jOGd_-/view");
+
     } else if (selection_name == 'herr_ammer' && selection_sprache == 'englisch') {
-        display_qr.style.backgroundImage = "url(./assets/qrcode/ammerEN.png)"
+        display_qr.style.backgroundImage = "url(./assets/qrcode/ammerEN.png)";
+        link.setAttribute("href", "https://drive.google.com/file/d/1CSsIFzXjVPg1OVxu7sNntYP0Sd0DPnyb/view?usp=share_link");
     } 
 }
+
