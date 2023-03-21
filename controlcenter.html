@@ -7,8 +7,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" media="screen and (min-width: 769px)" href="widescreen.css">
-  <link rel="stylesheet" media="screen and (max-width: 768px)" href="smallscreen.css">
+  <link rel="stylesheet" media="screen and (min-width: 1440px)" href="widescreen.css">
+  <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1439px)" href="mediumscreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 767px)" href="smallscreen.css">
   <link rel="icon" type="image/x-icon" href="assets/favicon.png">
 
   <!-- Bootstrap CSS v5.2.1 -->
@@ -197,7 +198,7 @@
               <p class="header4"> Druckbericht</p>
               <p class="header5">Herstellungsdatum: <span id="datum"></span></p>
               <p class="header5">Chargennummer: <span id="display_chargennr"></span></p>
-              <br />
+              <br class="not_on_tablet"/>
               <br />
               <p class="header5">Wirkstoffe: </p>
               <ul>

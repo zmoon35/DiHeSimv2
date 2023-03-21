@@ -318,35 +318,35 @@ function qr_decision() {
 
     if (selection_name == 'frau_bauer' && selection_sprache == 'deutsch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/bauerDE.png)";
-        link.setAttribute("href", "https://drive.google.com/file/d/13F8cjNnsCskPGCjOnVvnG3xprQkgtyJn/view?usp=share_link");
+        link.setAttribute("href", "https://video.wixstatic.com/video/f88f4f_d79055f9832f4728b82be1fd3878cb99/1080p/mp4/file.mp4");
 
     } else if (selection_name == 'frau_bauer' && selection_sprache == 'englisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/bauerEN.png)";
-        link.setAttribute("href", "https://drive.google.com/file/d/1GvmIkKCSRUuVtpPNhHNdrMNIGwrneuqD/view?usp=share_link");
+        link.setAttribute("href", "https://video.wixstatic.com/video/f88f4f_f6068a5c7d414010933162da5b3c6621/1080p/mp4/file.mp4");
 
     } else if (selection_name == 'frau_bauer' && selection_sprache == 'spanisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/bauerSP.png)";
-        link.setAttribute("href", "https://drive.google.com/file/d/185-nPYxcPTQNgqNr6jsN0osVMirABpcL/view?usp=share_link");
+        link.setAttribute("href", "https://video.wixstatic.com/video/f88f4f_3a0ab1581abe46daa3bf1b6ab0699581/1080p/mp4/file.mp4");
 
     } else if (selection_name == 'frau_bauer' && selection_sprache == 'franzoesisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/bauerFR.png)";
-        link.setAttribute("href", "https://drive.google.com/file/d/135gcAdJ8nCUgOztQBwdwNvC5K9j8k92C/view?usp=share_link");
+        link.setAttribute("href", "https://video.wixstatic.com/video/f88f4f_8b5ce884b096466f81e257fecb4416ae/1080p/mp4/file.mp4");
 
     } else if (selection_name == 'herr_ammer' && selection_sprache == 'franzoesisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/ammerFR.png)";
-        link.setAttribute("href", "https://drive.google.com/file/d/1WTDIGD-5ZNBbpUDowfGvjcm2XItqCWO1/view?usp=share_link");
+        link.setAttribute("href", "https://video.wixstatic.com/video/f88f4f_51cc7326b1054b8691f6aedbbd140a79/1080p/mp4/file.mp4");
 
     } else if (selection_name == 'herr_ammer' && selection_sprache == 'spanisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/ammerSP.png)";
-        link.setAttribute("href", "https://drive.google.com/file/d/1wNwNIsvsB0Gtdozytw-MkeCL8qEAkEDu/view?usp=share_link");
+        link.setAttribute("href", "https://video.wixstatic.com/video/f88f4f_88c307f751424715bc4e3978ef729e0b/1080p/mp4/file.mp4");
         
     } else if (selection_name == 'herr_ammer' && selection_sprache == 'deutsch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/ammerDE.png)";
-        link.setAttribute("href", "https://drive.google.com/file/d/1gA1NZPVJeibLvhEocLOxkW-wg1jOGd_-/view");
+        link.setAttribute("href", "https://video.wixstatic.com/video/f88f4f_7738ae9b32734a24a430510d37267984/1080p/mp4/file.mp4");
 
     } else if (selection_name == 'herr_ammer' && selection_sprache == 'englisch') {
         display_qr.style.backgroundImage = "url(./assets/qrcode/ammerEN.png)";
-        link.setAttribute("href", "https://drive.google.com/file/d/1CSsIFzXjVPg1OVxu7sNntYP0Sd0DPnyb/view?usp=share_link");
+        link.setAttribute("href", "https://video.wixstatic.com/video/f88f4f_9b88fe9153e44d35900137f5ec30ec79/1080p/mp4/file.mp4");
     } 
 }
 
