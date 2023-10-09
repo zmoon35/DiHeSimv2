@@ -51,27 +51,19 @@
 
           <div class="mobilephone">
             <div class="anzahl_menue">
-              <div id="label_anzahl">Tabletten</div>
+              <div id="label_anzahl"></div>
               <br />
 
               <div id="button_row">
-                <button type="button" onclick="amount_reduce_5()"><div class="grey_button" id="anzahl_m5">-5</div></button>
-                <button type="button" onclick="amount_reduce_1()"><div class="grey_button" id="anzahl_m1">-1</div></button>
-
-                <div id="anzahl">1</div>
-
-                <button type="button" onclick="amount_add_1()"><div class="grey_button" id="anzahl_p1">+1</div></button>
-              
-                <button type="button" onclick="amount_add_5()"><div class="grey_button" id="anzahl_p5">+5</div></button>
-              </div>
+                </div>
 
               <div id="print_menue">
                 <div type="button" class="print_button" onclick="print_b()">Drucken</div>  
               </div>
 
               <div id="drueckoption_menue">
-                <div type="button" class="odf_button" onclick="window.location='./controlcenter_2D.html'">2D</div>
-                <div type="button" class="tabletten_button" onclick="">3D</div>
+                <div type="button" class="odf_button" onclick="">2D</div>
+                <div type="button" class="tabletten_button" onclick="window.location='./controlcenter.html'">3D</div>
                 
               </div>
             </div>
@@ -83,36 +75,36 @@
           <div class="wirkstoff" id="wirkstoff1" type="button" onclick="show_amb()">
             <div class="druckkopf_nummer">1</div>
             <br />
-            <p class="header1">Amlodipine</p>
+            <p class="header1">Wirkstoff 1</p>
             <p class="anzeige"><span id="anzeige1">0.0</span>mg</p>
           </div>
 
           <div class="wirkstoff" id="wirkstoff2" type="button" onclick="show_hct()">
             <div class="druckkopf_nummer">2</div>
             <br />
-            <p class="header1">HCT</p>
+            <p class="header1">Wirkstoff 2</p>
             <p class="anzeige"><span id="anzeige2">0.0</span>mg</p>
           </div>
 
           <div class="wirkstoff" id="wirkstoff3"  type="button" onclick="show_cad()">
             <div class="druckkopf_nummer">3</div>
             <br />
-            <p class="header1">Candesartan</p>
+            <p class="header1">Wirkstoff 3</p>
             <p class="anzeige"><span id="anzeige3">0.0</span>mg</p>
           </div>
 
           <div class="wirkstoff" id="wirkstoff4"  type="button" onclick="show_ros()">
             <div class="druckkopf_nummer">4</div>
             <br />
-            <p class="header1">Rosuvastatin</p>
+            <p class="header1">Wirkstoff 4</p>
             <p class="anzeige"><span id="anzeige4">0.0</span>mg</p>
           </div>
         
         </div>
         <div class="wirkstoffbox" id="amb">
-          <p class="header2">Amlodipine Besylate (AMB)</p>
+          <p class="header2">Wirkstoff 1</p>
 
-          <center><img class="struktur" src="./assets/amlodipine.webp" alt="atomare Struktur von Amlodipine" /></center>
+          <center><img class="struktur" src="./assets/wirkstoff1.png" alt="atomare Struktur von Amlodipine" /></center>
 
           <div id="dosierung_menue">
             <div id="minus_menue">
@@ -129,9 +121,9 @@
           </div>
         </div>
         <div class="wirkstoffbox" id="hct">
-          <p class="header2">Hydrochlorothiazide (HCT)</p>
+          <p class="header2">Wirkstoff 2</p>
 
-          <center><img class="struktur" src="./assets/Hydrochlorothiazide.svg.png" alt="atomare Struktur von Hydrochlorothiazide" /></center>
+          <center><img class="struktur" src="./assets/Wirkstoff2.png" alt="atomare Struktur von Hydrochlorothiazide" /></center>
 
           <div id="dosierung_menue">
             <div id="minus_menue">
@@ -149,9 +141,9 @@
 
         </div>
         <div class="wirkstoffbox" id="cad">
-          <p class="header2">Candesartan Cilexetil (CAD)</p>
+          <p class="header2">Wirkstoff 3</p>
 
-          <center><img class="struktur" src="./assets/Candesartan Cilexetil.gif" alt="atomare Struktur von Candesartan Cilexetil" /></center>
+          <center><img class="struktur" src="./assets/Wirkstoff3.png" alt="atomare Struktur von Candesartan Cilexetil" /></center>
 
           <div id="dosierung_menue">
             <div id="minus_menue">
@@ -168,9 +160,9 @@
           </div>
         </div>
         <div class="wirkstoffbox" id="ros">
-          <p class="header2">Rosuvastatin Calcium (ROS)</p>
+          <p class="header2">Wirkstoff 4</p>
 
-          <center><img class="struktur" src="./assets/rosuvastatin-structure.png" alt="atomare Struktur von Rosuvastatin Calcium" /></center>
+          <center><img class="struktur" src="./assets/Wirkstoff4.png" alt="atomare Struktur von Rosuvastatin Calcium" /></center>
 
           <div id="dosierung_menue">
             <div id="minus_menue">
@@ -188,17 +180,16 @@
         </div>
       </div>
 
-      <video id="print_vid" src="./assets/DiHeSys Video Short better quality no sound_Trim2.mp4" muted autoplay></video>
+      <video id="print_vid" src="./assets/2DVideo.mp4" muted autoplay></video>
 
       <div id="frame_3">
         <div class="report">
           <div id="print_report">
             <div id="print_left">
-              <div id="print_img"></div>
+              <div id="print_img2d"></div>
               <div id="print_status">
                 <p id="passed">Passed</p>
-                <p id="mg">160mg</p>
-                <p id="marge">152mg (-5%) - 168mg (+5%)</p>
+                <p id="mg">150mg</p>
               </div>  
             </div>
             <div id="print_data">
@@ -209,10 +200,10 @@
               <br />
               <p class="header5">Wirkstoffe: </p>
               <ul>
-                <li>Amlodipine Besylate (AMB)</li>
-                <li>Hydrochlorothiazide (HCT)</li>
-                <li>Candesartan Cilexetil (CAD)</li>
-                <li>Rosuvastatin Calcium (ROS)</li>
+                <li>Wirkstoff 1</li>
+                <li>Wirkstoff 2</li>
+                <li>Wirkstoff 3</li>
+                <li>Wirkstoff 4</li>
               </ul>
             </div>
           </div>

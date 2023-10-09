@@ -160,15 +160,31 @@ button {
     height: 75px;
 }
 
-#print_menue {
+#print_menue, #drueckoption_menue {
     float: left;
     position: relative;
     width: 500px;
-    height: 338px;
+    height: 138px;
 }
 
 .print_button {
     width: 235px;
+    height: 75px;
+    
+    border: #808080 solid 3px;
+    border-radius: 20px;
+    background-color: #bababa;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.tabletten_button, .odf_button{
+    width: 115px;
     height: 75px;
     
     border: #808080 solid 3px;
@@ -355,6 +371,20 @@ video {
     width: 253px;
     height: 247px;
     background-image: url("./assets/pill_no_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: center;
+
+    border-right: solid #2E2E2E;
+    border-bottom: solid #2E2E2E;
+    border-width: 3px;
+    border-radius: 15px 0px 0px 0px;
+}
+
+#print_img {
+    width: 253px;
+    height: 247px;
+    background-image: url("./assets/2D_ODF_Bild.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: center;
