@@ -381,7 +381,7 @@ video {
     border-radius: 15px 0px 0px 0px;
 }
 
-#print_img {
+#print_img2d {
     width: 253px;
     height: 247px;
     background-image: url("./assets/2D_ODF_Bild.jpg");
